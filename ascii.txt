@@ -1,0 +1,14 @@
+$ git checkout HEAD portrait.txt
+
+$ git add portrait.txt
+
+$ git commit -am "eyebrows"
+[master 5d31e26] eyebrows
+
+$ git add .
+
+$ git commit -am "Changes to Date"
+
+$ git reset HEAD -- house.txt
+
+$ git commit -am "Final commit"
