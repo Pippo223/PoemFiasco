@@ -1,0 +1,25 @@
+$ git checkout HEAD road-not-taken.txt
+
+$ git checkout -- oven-bird.txt
+
+$ git diff fire-and-ice.txt
+
+$ git add .
+
+$ git reset HEAD -- fire-and-ice.txt
+    Unstaged changes after reset:
+    M       fire-and-ice.txt
+
+$ git add .
+
+$ git commit -am "Some changes"
+[master cc419e2] Some changes
+ 3 files changed, 26 insertions(+), 15 deletions(-)
+ rewrite oven-bird.txt (99%)
+
+ $ git revert HEAD
+[master 710bb57] Revert "Some changes"
+ 3 files changed, 15 insertions(+), 26 deletions(-)
+ rewrite oven-bird.txt (99%)
+
+ git checkout HEAD filename
